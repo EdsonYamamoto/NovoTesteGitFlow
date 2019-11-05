@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TesteGitFlow
+namespace TesteGitFlow2
 {
     class Program
     {
