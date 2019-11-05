@@ -7,5 +7,9 @@ namespace TesteGitFlow2
         public double Somar(double a, double b) {
             return a + b;
         }
+        public double Subtrair(double a, double b)
+        {
+            return a - b;
+        }
     }
 }
