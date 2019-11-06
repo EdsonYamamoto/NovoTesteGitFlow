@@ -9,7 +9,11 @@ public class Pessoa
     public string password;
 
     public static Pessoa Login(string email, string password) {
-        return LoginPessoa(email, password);
+        Pessoa tentativaLogin = LoginPessoa(email, password);
+        if (tentativaLogin == null)
+            return null;
+        else
+            return tentativaLogin;
     }
 
     public static Pessoa LoginPessoa(string email, string password){
