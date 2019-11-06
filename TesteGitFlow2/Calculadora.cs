@@ -30,5 +30,9 @@ namespace TesteGitFlow2
         {
             return Math.Sqrt(a);
         }
+        public double Multiplicacao(double a, double b)
+        {
+            return a * b;
+        }
     }
 }
