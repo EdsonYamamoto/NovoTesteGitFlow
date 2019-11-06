@@ -4,6 +4,10 @@ namespace TesteGitFlow2
 {
     class Calculadora
     {
+        public Calculadora()
+        {
+            Console.Writeline("metodo calculadora");
+        }
         public double Somar(double a, double b) {
             return a + b;
         }
