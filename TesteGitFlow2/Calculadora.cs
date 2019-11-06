@@ -13,5 +13,9 @@ namespace TesteGitFlow2
         public double Divisao(double a, double b) {
             return a / b;
         }
+        public double RaizQuadrada(double a)
+        {
+            return Math.Sqrt(a);
+        }
     }
 }
