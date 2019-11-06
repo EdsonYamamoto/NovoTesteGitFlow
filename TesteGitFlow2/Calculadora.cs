@@ -2,12 +2,21 @@ using System;
 
 namespace TesteGitFlow2
 {
-    class Calculadora
+    public sealed class Singleton<T> where T : class, new()
     {
-        public Calculadora()
+        private static T instance;
+
+        public static T Instance()
         {
-            Console.Writeline("metodo calculadora");
+            lock (typeof(T))
+                if (instance == null) instance = new T();
+
+            return instance;
         }
+    }
+
+    public class Calculadora
+    {
         public double Somar(double a, double b) {
             return a + b;
         }
